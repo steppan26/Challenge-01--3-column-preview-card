@@ -1,0 +1,136 @@
+:root{
+    --clr-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-sedans: hsl(31, 77%, 52%);
+    --clr-suvs: hsl(184, 100%, 22%);
+    --clr-luxury: hsl(179, 100%, 13%);
+    
+    --clr-neutral-100: hsl(0, 0%, 95%);
+
+    --ff-heading: 'Big Shoulders Display', cursive;
+    --ff-primary: 'Lexend Deca', sans-serif;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    font-family: var(--ff-primary);
+    font-size: 15px;
+    width: 100%;
+    min-width: 300px;
+    background-color: var(--clr-neutral-100);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0 2em 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+.section-logo{
+    width: 30%;
+}
+
+.bg-color-sedans{
+    background-color: var(--clr-sedans);
+    border-radius: 8px 8px 0 0;
+    padding: 2.5em 2em 2.5em 2em;
+    color: var(--clr-sedans);
+    max-width: 300px;
+    width: minmax;
+}
+
+.bg-color-suvs{
+    background-color: var(--clr-suvs);
+    padding: 2.5em 2em 2.5em 2em;
+    color: var(--clr-suvs);
+    max-width: 300px;
+}
+
+.bg-color-luxury{
+    background-color: var(--clr-luxury);
+    padding: 2.5em 2em 2.5em 2em;
+    border-radius: 0 0 8px 8px;
+    color: var(--clr-luxury);
+    max-width: 300px;
+}
+
+.heading{
+    font-family: var(--ff-heading);
+    text-transform: uppercase;
+    padding: 0;
+    font-size: 2rem;
+    color: var(--clr-neutral-100);
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+p{
+    color: var(--clr-transparent-white);
+    line-height: 24px;
+    padding: 1.5rem 0;
+}
+
+button.btn-main{
+    border: none;
+    border-radius: 25px;
+    margin: 3px;
+    padding: 1em 2em 1em 2em;
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-transparent);
+}
+
+.btn-main:hover{
+    border: 3px solid var(--clr-neutral-100);
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--clr-neutral-100);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media only screen and (min-width: 800px){
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .bg-color-sedans{
+        border-radius: 8px 0 0 8px;
+        display: inline-block;
+        padding: 3rem;
+        min-width: 300px;
+   }
+    .bg-color-suvs{
+        display: inline-block;
+        padding: 3rem;
+        min-width: 300px;
+
+   }
+    .bg-color-luxury{
+        border-radius: 0 8px 8px 0;
+        display: inline-block;
+        padding: 3rem;
+        min-width: 300px;
+
+   }
+
+    p{
+        padding-bottom: 5rem;
+    }
+    
+}

@@ -35,7 +35,7 @@ Users should be able to:
 
 ## My process
 
-My initial thought was to work on building out the HTML by adding in the corresponding elements, the great part of this design is that it is very modular, which means that i could focus on getting one card right and then apply the same structure to the other elements. I opted to use <section> tags for each card to help with accessibility, each section was then wrapped in a div element with a ".main" class. Naturally the I used <H1> tags for the titles, <p> tags for the main body of text and a <button> tag for the button.
+"My initial thought was to work on building out the HTML by adding in the corresponding elements, the great part of this design is that it is very modular, which means that i could focus on getting one card right and then apply the same structure to the other elements. I opted to use <section> tags for each card to help with accessibility, each section was then wrapped in a div element with a ".main" class. Naturally the I used <H1> tags for the titles, <p> tags for the main body of text and a <button> tag for the button.
 
 My next thought was to work the CSS, but due to the responsive design of the project, I decided to start by building out mobile first, and to add complexity as I build up to the desktop size.
   I started by creating custom properties for the different colors and fonts which would be used in the project.
@@ -45,7 +45,7 @@ My next thought was to work the CSS, but due to the responsive design of the pro
   The next step was to work on the desktop version, here I used a media querie (set to 800px) which would then apply seperate style at that higher resolution.
   This step is where I really benefited from my previous decision to wrap everything in a div (.main) which I can now change its display type to use flexbox with a row direction and and set to stretch vertically (to ensure all cards are always the same size).
   A few extra flair styles were added (mostly extra padding and margins) to match the style provided by the project manager.
-  I then iterated back and forth tweaking numbers to more closely match the designs provided, followed by a clean up of the code.
+  I then iterated back and forth tweaking numbers to more closely match the designs provided, followed by a clean up of the code."
 
 
 ### Built with
